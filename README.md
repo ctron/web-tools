@@ -18,6 +18,8 @@ cargo add web-tools
 Rust has a strict type system, which is great. But sometimes it's just convenient to use:
 
 ```rust
+use web_tools::prelude::*;
+
 fn callback(node: &NodeRef) {
     node.focus();
 }
