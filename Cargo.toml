@@ -1,0 +1,30 @@
+[package]
+name = "web-tools"
+version = "0.1.0"
+edition = "2021"
+
+authors = ["Jens Reimann <jreimann@redhat.com>"]
+license = "Apache-2.0"
+description = "Tools for the Web"
+repository = "https://github.com/ctron/yew-consent"
+categories = ["wasm", "web-programming", "gui"]
+keywords = ["yew", "tools", "web", "html"]
+readme = "README.md"
+rust-version = "1.70"
+
+[dependencies]
+yew = { version = "0.21", optional = true }
+
+[dependencies.web-sys]
+version = "0.3"
+features = [
+    "Node",
+    "NodeList",
+    "HtmlElement",
+    "HtmlFormElement",
+    "HtmlCollection",
+]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
