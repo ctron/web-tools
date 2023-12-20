@@ -1,4 +1,4 @@
-# yew-tools
+# web-tools
 
 [![crates.io](https://img.shields.io/crates/v/yew-tools.svg)](https://crates.io/crates/web-tools)
 [![docs.rs](https://docs.rs/yew-tools/badge.svg)](https://docs.rs/web-tools)
@@ -28,4 +28,4 @@ fn callback(node: &NodeRef) {
 ## Functionality
 
 * Optimistic traits: execute some function on an element, if it supports it … or do nothing.
-* Iterators for things that should be iterable, but don't implement `IntpIterator`.
+* Iterators for things that should be iterable, but don't implement `IntoIterator`.
