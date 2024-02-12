@@ -23,6 +23,7 @@ features = [
     "HtmlElement",
     "HtmlFormElement",
     "HtmlCollection",
+    "HtmlInputElement",
 ]
 
 [package.metadata.docs.rs]
