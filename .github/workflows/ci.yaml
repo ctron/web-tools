@@ -28,7 +28,7 @@ jobs:
           rustup toolchain install ${{ matrix.toolchain }} --component rustfmt,clippy --target wasm32-unknown-unknown
           rustup default ${{ matrix.toolchain }}
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: |
             ~/.cargo/registry/index/
