@@ -1,7 +1,7 @@
 # web-tools
 
-[![crates.io](https://img.shields.io/crates/v/yew-tools.svg)](https://crates.io/crates/web-tools)
-[![docs.rs](https://docs.rs/yew-tools/badge.svg)](https://docs.rs/web-tools)
+[![crates.io](https://img.shields.io/crates/v/web-tools.svg)](https://crates.io/crates/web-tools)
+[![docs.rs](https://docs.rs/web-tools/badge.svg)](https://docs.rs/web-tools)
 
 > Tools for the Web
 
