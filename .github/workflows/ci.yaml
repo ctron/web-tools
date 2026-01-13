@@ -11,17 +11,17 @@ on:
 jobs:
   check:
 
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         toolchain:
           - stable
-          # minimum version: because of "clap_lex"
-          - "1.70"
+          # minimum version: because of edition 2024
+          - "1.85"
 
     steps:
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install Rust ${{ matrix.toolchain }}
         run: |
@@ -51,7 +51,7 @@ jobs:
 
       - name: Run cargo check
         run: |
-          cargo check-all-features --target wasm32-unknown-unknown
+          cargo check-all-features -- --target wasm32-unknown-unknown
 
       - name: Run cargo test
         run: |
