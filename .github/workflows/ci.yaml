@@ -17,7 +17,7 @@ jobs:
         toolchain:
           - stable
           # minimum version: because of edition 2024
-          - "1.85"
+          - "1.90"
 
     steps:
 
